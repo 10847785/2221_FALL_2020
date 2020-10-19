@@ -8,12 +8,15 @@ public class PlayerController : MonoBehaviour
 {
     private FloatData moveSpeed;
     public FloatData normalSpeed, fastSpeed;
-    public float rotateSpeed = 30f, gravity = -9.81f;
+    public float rotateSpeed = 30f, gravity = -9.81f, jumpForce = 3f;
 
     private CharacterController controller;
     private Vector3 movement;
     private float yVar;
     private bool canMove = true;
+    
+    public IntData playerJumpCount;
+    private int jumpCount;
 
     private void Start()
     {
@@ -42,6 +45,18 @@ public class PlayerController : MonoBehaviour
             if (controller.isGrounded && movement.y < 0)
             {
                 yVar = -1f;
+            }
+            
+            if (controller.isGrounded && movement.y < 0)
+            {
+                yVar = -1f;
+                jumpCount = 0;
+            }
+
+            if (Input.GetButtonDown("Jump") && jumpCount < playerJumpCount.value)
+            {
+                yVar = jumpForce;
+                jumpCount++;
             }
         
             var hInput = Input.GetAxis("Horizontal") * Time.deltaTime*rotateSpeed;
