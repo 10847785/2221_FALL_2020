@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float playerHealth = 1f;
-    public float playerHealthChange = 0.1f;
+    public float healthAmount = 20f;
+    public FloatData playerHealth, maximumHealth;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playerHealth -= playerHealthChange;
+            Debug.Log("The damage is " + healthAmount);
+            playerHealth.value += healthAmount;
+            playerHealth.value = Mathf.Clamp(playerHealth.value, 0f, maximumHealth.value);
         }
     }
 }
