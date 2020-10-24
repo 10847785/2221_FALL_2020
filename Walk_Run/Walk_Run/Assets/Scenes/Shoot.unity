@@ -149,13 +149,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491349964}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.02, y: 0.71, z: 0}
   m_LocalScale: {x: 0.31795, y: 0.31795, z: 0.31795}
   m_Children: []
   m_Father: {fileID: 1693352459}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &491349966
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -386,13 +386,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900773623}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.22983779, y: -0, z: -0, w: 0.97322893}
+  m_LocalPosition: {x: 0, y: 4.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.575, y: 0, z: 0}
 --- !u!1 &1302528141
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +487,7 @@ Transform:
   m_LocalScale: {x: 1.6326, y: 1.6326, z: 1.6326}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1693352455
 GameObject:
@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 1693352458}
   - component: {fileID: 1693352457}
   - component: {fileID: 1693352456}
+  - component: {fileID: 1693352460}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -583,5 +584,21 @@ Transform:
   m_Children:
   - {fileID: 491349965}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1693352460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693352455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696c2a0a114824fb536c683fe23425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoCount: 10
+  maxAmmo: 10
+  prefab: {fileID: 1833142480924885601, guid: 4feaffab22aaa284ab93a33aff20b5aa, type: 3}
+  Instancer: {fileID: 491349965}

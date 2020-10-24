@@ -16,6 +16,6 @@ public class BulletBehaviour : MonoBehaviour
         
         rBody.AddRelativeForce(Vector3.forward*bulletForce);
         yield return new WaitForSeconds(lifeTime);
-        
+        Destroy(gameObject);
     }
 }
