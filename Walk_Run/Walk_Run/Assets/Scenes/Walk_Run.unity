@@ -678,15 +678,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1067217524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ae52e53c8938043beb06e07d143c0a, type: 3}
+  m_Script: {fileID: 11500000, guid: f89f4e137b7fc4c4599313b4bd09301c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   normalSpeed: {fileID: 11400000, guid: 58c6c7c59ddcea14c967f54da2e731f3, type: 2}
   fastSpeed: {fileID: 11400000, guid: b025fca43d5850e4c98f9c179ad80cda, type: 2}
   rotateSpeed: 210
   gravity: -9.81
-  jumpForce: 5
+  jumpForce: 3
   playerJumpCount: {fileID: 11400000, guid: 75cb007ca13e3a74c9923aa6028fa777, type: 2}
+  newColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor: {r: 1, g: 0, b: 0, a: 0}
+  isOpen: 0
+  holdTime: 3
+  door: {fileID: 0}
+  timer: {fileID: 0}
 --- !u!143 &1067217526
 CharacterController:
   m_ObjectHideFlags: 0
