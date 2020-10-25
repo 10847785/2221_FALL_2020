@@ -34,6 +34,21 @@ public class Merge : MonoBehaviour
     public IntData time;
     public Text timerText;
     
+    //Shooting
+    public int ammoCount = 10;
+    public int maxAmmo = 10;
+    public GameObject prefab;
+    public Transform Instancer;
+    public float reloadTime;
+    //public WaitForFixedUpdate wffu = new WaitForFixedUpdate();
+    public Image coolDownImage;
+    private bool canShoot = true;
+    
+    //Bullet Behaviour
+    private Rigidbody rBody;
+    public float bulletForce;
+    public float lifeTime;
+    
     //Health
     public float healthAmount = 20f;
     public FloatData playerHealth, maximumHealth;
@@ -44,7 +59,7 @@ public class Merge : MonoBehaviour
     private ClampFloatData healthClamp;
     [SerializeField] private CharacterController myCharacterControllerScript;
 
-    private void Start()
+    private IEnumerator Start()
     {
         //Movement
         moveSpeed = normalSpeed;
@@ -59,6 +74,17 @@ public class Merge : MonoBehaviour
         
         //TimerUI
         time.value = maxTime;
+        
+        //Shooting
+        coolDownImage.fillAmount = 0;
+        ammoCount = maxAmmo;
+        
+        //Bullet Behaviour
+        rBody = GetComponent<Rigidbody>();
+        
+        rBody.AddRelativeForce(Vector3.forward*bulletForce);
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(gameObject);
         
         //Respawn
         myCharacterControllerScript = GetComponent<CharacterController>();
@@ -157,9 +183,20 @@ public class Merge : MonoBehaviour
         door.SetActive(true);
     }
     
-    //Respawn
     private void Update()
     {
+        //Shooting
+        if (Input.GetKeyDown(KeyCode.LeftShift) && ammoCount > 0 && canShoot)
+        {
+            fire();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(reload());
+        }
+        
+        //Respawn
         if (value.value <=0f)
         {
             myCharacterControllerScript.enabled = false;
@@ -173,6 +210,34 @@ public class Merge : MonoBehaviour
             }
         }
     }
+    
+    //Shooting
+    private void fire()
+    {
+        Instantiate(prefab, Instancer.position, Instancer.rotation);
+        ammoCount--;
+        
+        if (ammoCount == 0)
+        {
+            StartCoroutine(reload());
+        }
+    }
+    
+    private IEnumerator reload()
+    {
+        canShoot = false;
+        var countDown = reloadTime;
+        while (countDown > 0)
+        {
+            yield return wffu;
+            countDown -= .01f;
+            countDown = countDown - .01f;
+            coolDownImage.fillAmount = countDown / reloadTime;
+        }
+        ammoCount = maxAmmo;
+        canShoot = true;
+    }
+    
     
     //Clamp Float
     public void onEnable()
