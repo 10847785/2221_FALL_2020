@@ -124,7 +124,7 @@ public class Merge : MonoBehaviour
         }
     }
     
-    public void DisplayTimer()
+    private void DisplayTimer()
     {
         timerText.text = time.value.ToString();
     }

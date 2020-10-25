@@ -25,7 +25,7 @@ public class TimerUI : MonoBehaviour
         }
     }
 
-    public void DisplayTimer()
+    private void DisplayTimer()
     {
         timerText.text = time.value.ToString();
     }
