@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Merge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Merge.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +106,7 @@
       <workItem from="1603313339030" duration="7032000" />
       <workItem from="1603579172541" duration="4112000" />
       <workItem from="1603603162702" duration="898000" />
+      <workItem from="1603644869346" duration="1127000" />
     </task>
     <servers />
   </component>

@@ -693,6 +693,13 @@ MonoBehaviour:
   holdTime: 3
   door: {fileID: 0}
   timer: {fileID: 0}
+  healthAmount: 20
+  playerHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
+  maximumHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
+  value: {fileID: 0}
+  maxHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
+  spawnPoint: {fileID: 0}
+  myCharacterControllerScript: {fileID: 1067217526}
 --- !u!143 &1067217526
 CharacterController:
   m_ObjectHideFlags: 0

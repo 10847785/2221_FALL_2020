@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Merge : MonoBehaviour
 {
@@ -27,6 +28,21 @@ public class Merge : MonoBehaviour
     public int holdTime = 3;
     public GameObject door;
     public TimerUI timer;
+    
+    //TimerUI
+    public int maxTime;
+    public IntData time;
+    public Text timerText;
+    
+    //Health
+    public float healthAmount = 20f;
+    public FloatData playerHealth, maximumHealth;
+    
+    //Respawn
+    public FloatData value, maxHealth;
+    public GameObject spawnPoint;
+    private ClampFloatData healthClamp;
+    [SerializeField] private CharacterController myCharacterControllerScript;
 
     private void Start()
     {
@@ -40,6 +56,13 @@ public class Merge : MonoBehaviour
         colorChange.material.color = defaultColor;
         
         wfs = new WaitForSeconds(holdTime);
+        
+        //TimerUI
+        time.value = maxTime;
+        
+        //Respawn
+        myCharacterControllerScript = GetComponent<CharacterController>();
+        healthClamp = GetComponent<ClampFloatData>();
     }
     
     //Movement
@@ -89,6 +112,23 @@ public class Merge : MonoBehaviour
         
     }
     
+    //TimerUI
+    public IEnumerator Countdown()
+    {
+        time.value = maxTime;
+        while (time.value >= 0)
+        {
+            DisplayTimer();
+            yield return new WaitForSeconds(1f);
+            time.value--;
+        }
+    }
+    
+    public void DisplayTimer()
+    {
+        timerText.text = time.value.ToString();
+    }
+    
     //Trigger Volumes
     private void OnTriggerEnter(Collider other)
     {
@@ -96,6 +136,14 @@ public class Merge : MonoBehaviour
         colorChange.material.color = newColor;
         
         door.SetActive(false);
+        
+        //Health
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("The damage is " + healthAmount);
+            playerHealth.value += healthAmount;
+            playerHealth.value = Mathf.Clamp(playerHealth.value, 0f, maximumHealth.value);
+        }
         
     }
 
@@ -108,4 +156,29 @@ public class Merge : MonoBehaviour
         isOpen = false;
         door.SetActive(true);
     }
+    
+    //Respawn
+    private void Update()
+    {
+        if (value.value <=0f)
+        {
+            myCharacterControllerScript.enabled = false;
+            healthClamp.enabled = false;
+            transform.position = spawnPoint.transform.position;
+
+            if (transform.position == spawnPoint.transform.position)
+            {
+                healthClamp.enabled = true;
+                myCharacterControllerScript.enabled = true;
+            }
+        }
+    }
+    
+    //Clamp Float
+    public void onEnable()
+    {
+        playerHealth.value = maximumHealth.value;
+    }
+    
+    
 }
