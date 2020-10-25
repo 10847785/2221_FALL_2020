@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
@@ -10,17 +11,21 @@ public class Shooting : MonoBehaviour
     public int maxAmmo = 10;
     public GameObject prefab;
     public Transform Instancer;
-    public WaitForSeconds reloadTime;
+    public float reloadTime;
+    public WaitForFixedUpdate wffu = new WaitForFixedUpdate();
+    public Image coolDownImage;
+    private bool canShoot = true;
 
     private void Start()
     {
-        reloadTime = new WaitForSeconds(2f);
-        ammoCount = maxAmmo;
+       // reloadTime = new WaitForSeconds(2f);
+       coolDownImage.fillAmount = 0;
+       ammoCount = maxAmmo;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && ammoCount > 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && ammoCount > 0 && canShoot)
         {
             fire();
         }
@@ -44,8 +49,18 @@ public class Shooting : MonoBehaviour
 
     private IEnumerator reload()
     {
-        yield return reloadTime;
+        canShoot = false;
+        var countDown = reloadTime;
+        while (countDown > 0)
+        {
+            yield return wffu;
+            countDown -= .01f;
+            countDown = countDown - .01f;
+            coolDownImage.fillAmount = countDown / reloadTime;
+        }
+       // yield return reloadTime;
         ammoCount = maxAmmo;
+        canShoot = true;
     }
     
 }

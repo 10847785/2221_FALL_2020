@@ -21,12 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Color.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Color.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnemyDamage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnemyDamage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/PlayerHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/PlayerHealth.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Merge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Merge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimerUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shoot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shoot.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spirit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spirit/Image.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spirit/Image.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +57,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthImageBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SliderImageData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Merge.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +111,7 @@
       <workItem from="1603603162702" duration="898000" />
       <workItem from="1603644869346" duration="1127000" />
       <workItem from="1603649077477" duration="1713000" />
+      <workItem from="1603656968926" duration="2390000" />
     </task>
     <servers />
   </component>
