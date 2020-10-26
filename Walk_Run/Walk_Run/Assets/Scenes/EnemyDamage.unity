@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthAmount: -20
   playerHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
-  maximumHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
+  maximumHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
 --- !u!65 &43483622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthAmount: 20
   playerHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
-  maximumHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
+  maximumHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
 --- !u!65 &1235031289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   value: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
   maxHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
   spawnPoint: {fileID: 2068082069}
-  myCharacterControllerScript: {fileID: 0}
+  myCharacterControllerScript: {fileID: 1761885118}
 --- !u!114 &1761885120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,7 +1600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068082069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.97, y: -0.72, z: 56.3}
+  m_LocalPosition: {x: -5.97, y: 0.33, z: 56.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

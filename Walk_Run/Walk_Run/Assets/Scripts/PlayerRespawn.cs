@@ -18,7 +18,7 @@ public class PlayerRespawn : MonoBehaviour
 
     private void Update()
     {
-        if (value.value <=0f)
+        if (value.value <=0)
         {
             myCharacterControllerScript.enabled = false;
             healthClamp.enabled = false;

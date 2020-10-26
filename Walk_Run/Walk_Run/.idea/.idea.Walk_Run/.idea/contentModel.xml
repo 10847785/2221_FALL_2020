@@ -9,13 +9,13 @@
         <e p="Scripts" t="Include">
           <e p="BulletBehaviour.cs" t="Include" />
           <e p="ClampFloatData.cs" t="Include" />
+          <e p="Damage.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="HealthImageBehaviour.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
           <e p="Jump.cs" t="Include" />
           <e p="Merge.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
-          <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
           <e p="PreFabs.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(MeshRenderer))]
+[RequireComponent(typeof(Image))]
 public class Merge : MonoBehaviour
 {
     // Movement
@@ -23,16 +25,16 @@ public class Merge : MonoBehaviour
     public Color defaultColor;
     private MeshRenderer colorChange;
 
-    public bool isOpen;
+   // public bool isOpen;
     private WaitForSeconds wfs;
-    public int holdTime = 3;
+   /* public int holdTime = 3;
     public GameObject door;
-    public TimerUI timer;
+    public TimerUI timer; */
     
     //TimerUI
-    public int maxTime;
+  /*  public int maxTime;
     public IntData time;
-    public Text timerText;
+    public Text timerText; */
     
     //Shooting
     public int ammoCount = 10;
@@ -58,6 +60,11 @@ public class Merge : MonoBehaviour
     public GameObject spawnPoint;
     private ClampFloatData healthClamp;
     [SerializeField] private CharacterController myCharacterControllerScript;
+    
+    //Health Image
+    private Image healthImage;
+    public Gradient healthGradient;
+    public FloatData health;
 
     private IEnumerator Start()
     {
@@ -70,10 +77,10 @@ public class Merge : MonoBehaviour
         colorChange = GetComponent<MeshRenderer>();
         colorChange.material.color = defaultColor;
         
-        wfs = new WaitForSeconds(holdTime);
+       // wfs = new WaitForSeconds(holdTime);
         
         //TimerUI
-        time.value = maxTime;
+       // time.value = maxTime;
         
         //Shooting
         coolDownImage.fillAmount = 0;
@@ -89,6 +96,9 @@ public class Merge : MonoBehaviour
         //Respawn
         myCharacterControllerScript = GetComponent<CharacterController>();
         healthClamp = GetComponent<ClampFloatData>();
+        
+        //Health Image
+        healthImage = GetComponent<Image>();
     }
     
     //Movement
@@ -139,7 +149,7 @@ public class Merge : MonoBehaviour
     }
     
     //TimerUI
-    public IEnumerator Countdown()
+   /* public IEnumerator Countdown()
     {
         time.value = maxTime;
         while (time.value >= 0)
@@ -153,7 +163,7 @@ public class Merge : MonoBehaviour
     private void DisplayTimer()
     {
         timerText.text = time.value.ToString();
-    }
+    } */
     
     //Trigger Volumes
     private void OnTriggerEnter(Collider other)
@@ -161,13 +171,13 @@ public class Merge : MonoBehaviour
         newColor.a = 0.5f;
         colorChange.material.color = newColor;
         
-        door.SetActive(false);
+       // door.SetActive(false);
         
         //Health
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("The damage is " + healthAmount);
-            playerHealth.value += healthAmount;
+            playerHealth.value -= healthAmount;
             playerHealth.value = Mathf.Clamp(playerHealth.value, 0f, maximumHealth.value);
         }
         
@@ -177,10 +187,10 @@ public class Merge : MonoBehaviour
     {
         colorChange.material.color = defaultColor;
        
-        StartCoroutine(timer.Countdown());
+      //  StartCoroutine(timer.Countdown());
         yield return wfs;
-        isOpen = false;
-        door.SetActive(true);
+      //  isOpen = false;
+     //   door.SetActive(true);
     }
     
     private void Update()
@@ -209,6 +219,10 @@ public class Merge : MonoBehaviour
                 myCharacterControllerScript.enabled = true;
             }
         }
+        
+        //Health Image
+        healthImage.fillAmount = health.value / maxHealth.value;
+        healthImage.color = healthGradient.Evaluate(health.value / maxHealth.value);
     }
     
     //Shooting
