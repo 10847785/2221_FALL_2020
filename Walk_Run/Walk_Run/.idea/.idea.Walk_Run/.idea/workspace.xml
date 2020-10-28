@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Merge.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Merge.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,7 @@
       <workItem from="1603656968926" duration="2390000" />
       <workItem from="1603664863713" duration="1079000" />
       <workItem from="1603671164477" duration="5729000" />
-      <workItem from="1603679065789" duration="2406000" />
+      <workItem from="1603679065789" duration="3998000" />
     </task>
     <servers />
   </component>
