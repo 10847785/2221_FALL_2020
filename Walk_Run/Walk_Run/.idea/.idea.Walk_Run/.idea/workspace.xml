@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +61,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -113,6 +117,7 @@
       <workItem from="1603664863713" duration="1079000" />
       <workItem from="1603671164477" duration="5729000" />
       <workItem from="1603679065789" duration="3998000" />
+      <workItem from="1604337497991" duration="1349000" />
     </task>
     <servers />
   </component>

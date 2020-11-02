@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AIBehaviour.cs" t="Include" />
           <e p="BulletBehaviour.cs" t="Include" />
           <e p="ClampFloatData.cs" t="Include" />
           <e p="Damage.cs" t="Include" />
