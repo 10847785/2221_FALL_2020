@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(MeshRenderer))]
 public class TriggerBehaviour : MonoBehaviour
@@ -41,6 +42,26 @@ public class TriggerBehaviour : MonoBehaviour
         yield return wfs;
         isOpen = false;
         door.SetActive(true);
-    }
+    } 
+   
+  /* public UnityEvent triggerEnterEvent, triggerExitEvent;
+   public float delayTime = 0.01f;
+   private WaitForSeconds waitObj;
+
+   private void Start()
+   {
+       waitObj = new WaitForSeconds(delayTime);
+   }
+
+   private IEnumerator OnTriggerEnter(Collider other)
+   {
+       yield return waitObj;
+       triggerEnterEvent.Invoke();
+   }
+
+   private void OnTriggerExit(Collider other)
+   {
+       triggerExitEvent.Invoke();
+   } */
     
 }
