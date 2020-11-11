@@ -15,6 +15,8 @@
           <e p="HealthImageBehaviour.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
           <e p="Jump.cs" t="Include" />
+          <e p="PickUp.cs" t="Include" />
+          <e p="PickUpAnimation.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
           <e p="PreFabs.cs" t="Include" />

@@ -17,12 +17,19 @@ public class TriggerBehaviour : MonoBehaviour
     public int holdTime = 3;
     public GameObject door;
     public TimerUI timer;
+    
+    
+    public UnityEvent triggerEnterEvent, triggerExitEvent;
+    public float delayTime = 0.01f;
+    private WaitForSeconds waitObj;
     private void Start()
     {
         colorChange = GetComponent<MeshRenderer>();
         colorChange.material.color = defaultColor;
         
         wfs = new WaitForSeconds(holdTime);
+        
+       // waitObj = new WaitForSeconds(delayTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +38,9 @@ public class TriggerBehaviour : MonoBehaviour
         colorChange.material.color = newColor;
         
         door.SetActive(false);
+        
+       /* yield return waitObj;
+        triggerEnterEvent.Invoke(); */
         
     }
 
@@ -42,26 +52,11 @@ public class TriggerBehaviour : MonoBehaviour
         yield return wfs;
         isOpen = false;
         door.SetActive(true);
+        
+        //triggerExitEvent.Invoke();
     } 
    
-  /* public UnityEvent triggerEnterEvent, triggerExitEvent;
-   public float delayTime = 0.01f;
-   private WaitForSeconds waitObj;
-
-   private void Start()
-   {
-       waitObj = new WaitForSeconds(delayTime);
-   }
-
-   private IEnumerator OnTriggerEnter(Collider other)
-   {
-       yield return waitObj;
-       triggerEnterEvent.Invoke();
-   }
-
-   private void OnTriggerExit(Collider other)
-   {
-       triggerExitEvent.Invoke();
-   } */
+  
+   
     
 }
