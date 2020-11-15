@@ -25,7 +25,7 @@ public class Shooting : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && ammoCount > 0 && canShoot)
+        if (Input.GetKeyDown(KeyCode.F) && ammoCount > 0 && canShoot)
         {
             fire();
         }

@@ -21,9 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/White.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +55,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PreFabs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthCount.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ClampFloatData.cs" />
@@ -57,7 +62,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SliderImageData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Merge.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
@@ -65,8 +69,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickUpAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectTrigger.cs" />
       </list>
     </option>
   </component>
@@ -126,6 +133,10 @@
       <workItem from="1605059209599" duration="1438000" />
       <workItem from="1605115803936" duration="1152000" />
       <workItem from="1605130467687" duration="2291000" />
+      <workItem from="1605286797937" duration="1961000" />
+      <workItem from="1605289021035" duration="457000" />
+      <workItem from="1605385144436" duration="2236000" />
+      <workItem from="1605391922761" duration="978000" />
     </task>
     <servers />
   </component>

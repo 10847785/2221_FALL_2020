@@ -15,6 +15,7 @@
           <e p="HealthImageBehaviour.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
           <e p="Jump.cs" t="Include" />
+          <e p="ObjectTrigger.cs" t="Include" />
           <e p="PickUp.cs" t="Include" />
           <e p="PickUpAnimation.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
@@ -23,7 +24,6 @@
           <e p="Shooting.cs" t="Include" />
           <e p="SliderImageData.cs" t="Include" />
           <e p="TimerUI.cs" t="Include" />
-          <e p="TriggerBehaviour.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
