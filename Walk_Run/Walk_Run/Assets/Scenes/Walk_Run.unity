@@ -238,6 +238,13 @@ MonoBehaviour:
   holdTime: 3
   door: {fileID: 1552166885}
   timer: {fileID: 2022930856}
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1 &103904339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,12 +1246,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ae52e53c8938043beb06e07d143c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookDirection: {x: 0, y: 0, z: 0}
+  finalDirection: {x: 0, y: 0, z: 0}
   normalSpeed: {fileID: 11400000, guid: 58c6c7c59ddcea14c967f54da2e731f3, type: 2}
   fastSpeed: {fileID: 11400000, guid: b025fca43d5850e4c98f9c179ad80cda, type: 2}
-  rotateSpeed: 210
-  gravity: -9.81
-  jumpForce: 5
-  playerJumpCount: {fileID: 11400000, guid: 75cb007ca13e3a74c9923aa6028fa777, type: 2}
+  jumpForce: {fileID: 0}
+  playerJumpMax: {fileID: 0}
+  pushForce: 0
+  waitTime: 0
 --- !u!1 &1096111527
 GameObject:
   m_ObjectHideFlags: 0
