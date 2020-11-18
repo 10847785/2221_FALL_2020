@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -105,16 +106,13 @@ public class PlayerController : MonoBehaviour
     {
         currentSpeed = normalSpeed;
         controller = GetComponent<CharacterController>();
-        StartCoroutine(Move());
         wfs = new WaitForSeconds(waitTime);
     }
 
-    private IEnumerator Move()
+    private void Update()
     {
         canMove = true;
-        while (canMove)
-        {
-            yield return wffu;
+        
             yVar += gravity * Time.deltaTime;
             var vInput = Input.GetAxis("Vertical") * currentSpeed.value * Time.deltaTime;
             var hInput = Input.GetAxis("Horizontal") * currentSpeed.value * Time.deltaTime;
@@ -152,7 +150,7 @@ public class PlayerController : MonoBehaviour
 
             movement.Set(hInput, yVar, vInput);
             controller.Move(movement);
-        }
+        
     }
 
     private IEnumerator KnockBack(ControllerColliderHit hit, Rigidbody rBody)
@@ -172,7 +170,6 @@ public class PlayerController : MonoBehaviour
         }
 
         movement = Vector3.zero;
-        StartCoroutine(Move());
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)

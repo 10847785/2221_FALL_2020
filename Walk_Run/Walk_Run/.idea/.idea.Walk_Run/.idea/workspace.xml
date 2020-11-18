@@ -20,18 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BankMaterials/BankWallMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BankMaterials/BankWallMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BuildingMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BuildingMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/LibraryMaterials/LibraryWallMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/LibraryMaterials/LibraryWallMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/PoliceStationMaterials/StationWallMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PoliceStationMaterials/StationWallMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SchoolMaterials/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SchoolMaterials/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/SchoolMaterials/SchoolWall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SchoolMaterials/SchoolWall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/HornetMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/HornetMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Bullet 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Bullet 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/JumpForce.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/JumpForce.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +137,8 @@
       <workItem from="1605385144436" duration="2236000" />
       <workItem from="1605391922761" duration="978000" />
       <workItem from="1605499277617" duration="1732000" />
+      <workItem from="1605546990058" duration="897000" />
+      <workItem from="1605735758655" duration="805000" />
     </task>
     <servers />
   </component>
