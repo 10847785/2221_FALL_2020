@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.AI;
@@ -40,6 +40,8 @@ public class AIBehaviour : MonoBehaviour
     {
         canNav = false;
     }
+    
+    private int i = 0;
 
     private IEnumerator Patrol()
     {
@@ -48,8 +50,8 @@ public class AIBehaviour : MonoBehaviour
         {
             yield return wffu;
             if (agent.pathPending || !(agent.remainingDistance < 0.5f)) continue;
-          //  agent.destination = patrolPoints[i].position;
-          //  i = (i + 1) % patrolPoints.Count;
+            agent.destination = patrolPoints[i].position;
+            i = (i + 1) % patrolPoints.Count;
         }
     }
 }

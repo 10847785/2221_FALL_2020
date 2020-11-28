@@ -9,6 +9,22 @@ public class BulletBehaviour : MonoBehaviour
     private Rigidbody rBody;
     public float bulletForce;
     public float lifeTime;
+    public int damage = 1;
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            var hit = other.gameObject;
+            var health = hit.GetComponent<EnemyHealth>();
+
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+                Debug.Log("Projectile hits!");
+            }
+        }
+    }
 
     private IEnumerator Start()
     {
@@ -18,4 +34,5 @@ public class BulletBehaviour : MonoBehaviour
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
     }
+    
 }

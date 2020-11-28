@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/HornetMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/HornetMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Bullet 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Bullet 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Nest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Nest.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/JumpForce.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/JumpForce.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthImageBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyRespawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClampFloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SliderImageData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,24 +56,28 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PreFabs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthCount.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ClampFloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthImageBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SliderImageData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Merge.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickUpAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wander.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyRespawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
@@ -139,6 +145,15 @@
       <workItem from="1605499277617" duration="1732000" />
       <workItem from="1605546990058" duration="897000" />
       <workItem from="1605735758655" duration="805000" />
+      <workItem from="1606268725054" duration="348000" />
+      <workItem from="1606269668848" duration="550000" />
+      <workItem from="1606282503991" duration="853000" />
+      <workItem from="1606284719538" duration="262000" />
+      <workItem from="1606331906721" duration="193000" />
+      <workItem from="1606351223345" duration="1010000" />
+      <workItem from="1606357954063" duration="1008000" />
+      <workItem from="1606527325009" duration="2270000" />
+      <workItem from="1606580788692" duration="942000" />
     </task>
     <servers />
   </component>
@@ -167,5 +182,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1603672071944" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Wander.cs</url>
+          <line>35</line>
+          <properties documentPath="C:\Users\eric3\OneDrive\Documents\git\DGM2221_FALL_2020\2221_FALL_2020\Walk_Run\Walk_Run\Assets\Scripts\Wander.cs" initialLine="35">
+            <startOffsets>
+              <option value="756" />
+            </startOffsets>
+            <endOffsets>
+              <option value="827" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,6 +11,9 @@
           <e p="BulletBehaviour.cs" t="Include" />
           <e p="ClampFloatData.cs" t="Include" />
           <e p="Damage.cs" t="Include" />
+          <e p="EnemyDamage.cs" t="Include" />
+          <e p="EnemyHealth.cs" t="Include" />
+          <e p="EnemyRespawn.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="HealthImageBehaviour.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
@@ -23,7 +26,9 @@
           <e p="PreFabs.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
           <e p="SliderImageData.cs" t="Include" />
+          <e p="SpawnManager.cs" t="Include" />
           <e p="TimerUI.cs" t="Include" />
+          <e p="Wander.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
