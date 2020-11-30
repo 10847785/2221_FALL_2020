@@ -23,5 +23,5 @@ public class AIPatrol : MonoBehaviour
       if (agent.pathPending || !(agent.remainingDistance < 0.5f)) return;
       agent.destination = patrolPoints[i].position;
       i = (i + 1) % patrolPoints.Count;
-   }
+   } 
 }
