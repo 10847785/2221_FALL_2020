@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2916060327825064167}
   - component: {fileID: 2916060327825064185}
   - component: {fileID: 2916060327825064166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,13 +72,14 @@ GameObject:
   - component: {fileID: 2916060328529736390}
   - component: {fileID: 2916060328529736391}
   - component: {fileID: 2916060328529736411}
+  - component: {fileID: 6176221714807873182}
   - component: {fileID: 2916060328529736408}
   - component: {fileID: 4485893579766679388}
   - component: {fileID: 2916060328529736388}
-  - component: {fileID: -5063329853430550596}
+  - component: {fileID: 9190331525254489668}
   - component: {fileID: 839049931429559640}
   - component: {fileID: 8740480175241025749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -93,8 +94,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2916060328529736386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.38, y: 1.27, z: 28.83}
-  m_LocalScale: {x: 1.569375, y: 1.55, z: 1.55}
+  m_LocalPosition: {x: 50.5, y: 12, z: 28.83}
+  m_LocalScale: {x: 3.1754735, y: 3.13627, z: 3.13627}
   m_Children:
   - {fileID: 2916060327825064167}
   m_Father: {fileID: 0}
@@ -171,6 +172,20 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6176221714807873182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916060328529736386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c64f0555b4854e928d95ad37e1d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 0}
 --- !u!114 &2916060328529736408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b141886793de1af43a9613152649c464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  destination: {fileID: 0}
   patrolPoints: []
 --- !u!65 &4485893579766679388
 BoxCollider:
@@ -211,21 +226,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.622731, y: 0.12348345, z: 6.139723}
   m_Center: {x: -0.21578789, y: -0.43825883, z: -0.030458206}
---- !u!114 &-5063329853430550596
-MonoBehaviour:
+--- !u!143 &9190331525254489668
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2916060328529736386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffffcc625a86d948b68906d2940ddd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wanderRadius: 50
-  wanderTimer: 3
-  target: {fileID: 0}
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &839049931429559640
 MonoBehaviour:
   m_ObjectHideFlags: 0
