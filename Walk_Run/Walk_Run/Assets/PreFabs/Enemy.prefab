@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: 2916060328529736408}
   - component: {fileID: 4485893579766679388}
   - component: {fileID: 2916060328529736388}
-  - component: {fileID: 9190331525254489668}
   - component: {fileID: 839049931429559640}
   - component: {fileID: 8740480175241025749}
   m_Layer: 8
@@ -184,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b141886793de1af43a9613152649c464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: {fileID: 0}
+  player: {fileID: 0}
   patrolPoints: []
 --- !u!65 &4485893579766679388
 BoxCollider:
@@ -212,24 +211,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.622731, y: 0.12348345, z: 6.139723}
   m_Center: {x: -0.21578789, y: -0.43825883, z: -0.030458206}
---- !u!143 &9190331525254489668
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2916060328529736386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &839049931429559640
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5730766636076055347}
   - component: {fileID: 7977431080295428273}
   m_Layer: 10
-  m_Name: GameObject
+  m_Name: EnemyKill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,6 +93,7 @@ Transform:
   m_LocalScale: {x: 0.35036, y: 0.35036, z: 0.35036}
   m_Children:
   - {fileID: 7023864140372499141}
+  - {fileID: 839248299277523553}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,3 +190,63 @@ MonoBehaviour:
   bulletForce: 2000
   lifeTime: 1
   damage: 1
+--- !u!1 &9111852467921729476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839248299277523553}
+  - component: {fileID: 7158535613095326384}
+  - component: {fileID: 963964778294955874}
+  m_Layer: 0
+  m_Name: NestKill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &839248299277523553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111852467921729476}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0029351492, y: 0.08902929, z: 0}
+  m_LocalScale: {x: 2.854207, y: 2.854207, z: 2.854207}
+  m_Children: []
+  m_Father: {fileID: 1927012663906418257}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7158535613095326384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111852467921729476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37415665, y: 0.34322417, z: 0.3549501}
+  m_Center: {x: 0.0064257085, y: -0.020222008, z: -0.021897927}
+--- !u!114 &963964778294955874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111852467921729476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ae83ddbf133a644a33ac9a5174934f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: -10
+  nestHealth: {fileID: 11400000, guid: 0f74a465e4cb39e449083396ef45c9ce, type: 2}
+  nestMax: {fileID: 11400000, guid: 67f0f4042af1fe44bbeec66d5c225c41, type: 2}
