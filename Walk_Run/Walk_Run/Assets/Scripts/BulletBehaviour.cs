@@ -20,7 +20,7 @@ public class BulletBehaviour : MonoBehaviour
 
             if (health != null)
             {
-                health.TakeDamage(damage);
+               // health.TakeDamage(damage);
                 Debug.Log("Projectile hits!");
             }
         }
