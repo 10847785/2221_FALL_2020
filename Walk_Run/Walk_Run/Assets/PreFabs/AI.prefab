@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2635876035401633257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3800875551785640219}
+  m_Layer: 8
+  m_Name: Enemy Damage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3800875551785640219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635876035401633257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2881751743545258250}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2881751742394345916
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,7 +58,7 @@ Transform:
   m_LocalScale: {x: 0.39963233, y: 0.39963233, z: 0.39963233}
   m_Children: []
   m_Father: {fileID: 2881751743545258250}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2881751743174327424
 GameObject:
@@ -58,7 +88,7 @@ Transform:
   m_LocalScale: {x: 0.39963233, y: 0.39963233, z: 0.39963233}
   m_Children: []
   m_Father: {fileID: 2881751743545258250}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2881751743539361210
 GameObject:
@@ -72,7 +102,7 @@ GameObject:
   - component: {fileID: 2881751743539361209}
   - component: {fileID: 2881751743539361208}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: Player Damage
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +120,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2881751743545258250}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2881751743539361209
 BoxCollider:
@@ -137,7 +167,7 @@ GameObject:
   - component: {fileID: 2881751743545258251}
   - component: {fileID: 2881751743545258295}
   - component: {fileID: 2881751743545258249}
-  - component: {fileID: 2881751743545258248}
+  - component: {fileID: 1167090982766342301}
   m_Layer: 8
   m_Name: AI
   m_TagString: Enemy
@@ -156,6 +186,7 @@ Transform:
   m_LocalPosition: {x: 41.7, y: 1.7, z: 34.6}
   m_LocalScale: {x: 2.5023, y: 2.5023, z: 2.5023}
   m_Children:
+  - {fileID: 3800875551785640219}
   - {fileID: 2881751743539361211}
   - {fileID: 2881751742394345917}
   - {fileID: 2881751743174327425}
@@ -306,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 11400000, guid: 343e2e8e6f7bba44aafb4b55a81510d6, type: 2}
   maximumHealth: {fileID: 11400000, guid: 884d7bb88a74d6147855e5e31605edaf, type: 2}
---- !u!114 &2881751743545258248
+--- !u!114 &1167090982766342301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,11 +346,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2881751743545258240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d85b01b2261c94187b6c329afb9490, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bdb6f174342c384ca3dd3d46658c470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: {fileID: 11400000, guid: 343e2e8e6f7bba44aafb4b55a81510d6, type: 2}
+  currentHealth: 10
+  maxHealth: 10
   spawnPoint: {fileID: 0}
+  points: 10
+  amount: 10
 --- !u!1 &2881751743588299776
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +382,7 @@ Transform:
   m_LocalScale: {x: 0.39963233, y: 0.39963233, z: 0.39963233}
   m_Children: []
   m_Father: {fileID: 2881751743545258250}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2881751743779521730
 GameObject:
@@ -378,5 +412,5 @@ Transform:
   m_LocalScale: {x: 0.39963233, y: 0.39963233, z: 0.39963233}
   m_Children: []
   m_Father: {fileID: 2881751743545258250}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
