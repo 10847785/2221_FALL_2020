@@ -22,7 +22,9 @@
           <e p="IntData.cs" t="Include" />
           <e p="Jump.cs" t="Include" />
           <e p="NestDamage.cs" t="Include" />
+          <e p="NestHealth.cs" t="Include" />
           <e p="NestSpawn.cs" t="Include" />
+          <e p="NestTakeDamage.cs" t="Include" />
           <e p="ObjectTrigger.cs" t="Include" />
           <e p="PickUp.cs" t="Include" />
           <e p="PickUpAnimation.cs" t="Include" />
