@@ -29,7 +29,7 @@ public class AIBehaviour : MonoBehaviour
          distance = agent.remainingDistance;
          yield return wffu;
       }
-      yield return new WaitForSeconds(2f);
+      yield return new WaitForSeconds(1f);
       
       
       StartCoroutine(canHunt ? OnTriggerEnter(other) : Patrol());

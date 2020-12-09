@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 4485893579766679388}
   - component: {fileID: 2916060328529736388}
   - component: {fileID: 839049931429559640}
-  - component: {fileID: 8740480175241025749}
+  - component: {fileID: 9167150258286616929}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -196,8 +196,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.14994, y: 1.0667355, z: 1.1133637}
-  m_Center: {x: 0.004030081, y: 0.03336772, z: 0.005109849}
+  m_Size: {x: 1.2342243, y: 1.0667355, z: 1.2197826}
+  m_Center: {x: 0.012046001, y: 0.03336771, z: -0.004890467}
 --- !u!65 &2916060328529736388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 11400000, guid: 343e2e8e6f7bba44aafb4b55a81510d6, type: 2}
   maximumHealth: {fileID: 11400000, guid: 884d7bb88a74d6147855e5e31605edaf, type: 2}
---- !u!114 &8740480175241025749
+--- !u!114 &9167150258286616929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,11 +234,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2916060328529736386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d85b01b2261c94187b6c329afb9490, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bdb6f174342c384ca3dd3d46658c470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: {fileID: 11400000, guid: 343e2e8e6f7bba44aafb4b55a81510d6, type: 2}
-  spawnPoint: {fileID: 183425572465423526, guid: 8ca1205ca5364af40b3a5662134ccce6, type: 3}
+  currentHealth: 20
+  maxHealth: 20
+  spawnPoint: {fileID: 0}
+  points: 10
+  amount: 10
 --- !u!1 &9016247457370153328
 GameObject:
   m_ObjectHideFlags: 0
