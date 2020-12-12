@@ -18,10 +18,13 @@
           <e p="Float.cs" t="Include" />
           <e p="FloatContainer.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
+          <e p="GameAction.cs" t="Include" />
+          <e p="GameActionHandler.cs" t="Include" />
           <e p="HealthImageBehaviour.cs" t="Include" />
           <e p="IntData.cs" t="Include" />
           <e p="Jump.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
+          <e p="MonoEventBehaviour.cs" t="Include" />
           <e p="NestDamage.cs" t="Include" />
           <e p="NestHealth.cs" t="Include" />
           <e p="NestSpawn.cs" t="Include" />
@@ -38,6 +41,8 @@
           <e p="SpawnManager.cs" t="Include" />
           <e p="TakeDamage.cs" t="Include" />
           <e p="TimerUI.cs" t="Include" />
+          <e p="TriggerEventBehaviour.cs" t="Include" />
+          <e p="Vector3Data.cs" t="Include" />
           <e p="Wander.cs" t="Include" />
         </e>
       </e>

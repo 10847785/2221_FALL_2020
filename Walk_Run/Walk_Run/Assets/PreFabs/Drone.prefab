@@ -231,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090505280849529631}
   - component: {fileID: 1090505280849529629}
-  - component: {fileID: 1090505280849529628}
+  - component: {fileID: 4287747509359675028}
   m_Layer: 8
   m_Name: Player Damage
   m_TagString: Enemy
@@ -266,7 +266,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.192979, y: 1.0590162, z: 1.1961899}
   m_Center: {x: 0.015823543, y: 0.029508114, z: -0.019613266}
---- !u!114 &1090505280849529628
+--- !u!114 &4287747509359675028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,12 +275,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1090505280849529630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0caa0c9d557d3e64abfade7f7b341566, type: 3}
+  m_Script: {fileID: 11500000, guid: 91f031dc9e9cb664b860d47acdd70852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: -10
-  playerHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
-  maximumHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -0.105
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1 &1090505280852021156
 GameObject:
   m_ObjectHideFlags: 0
