@@ -23,11 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Drone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Health.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Health.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Murder_Hornets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Murder_Hornets.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/PlayerHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/PlayerHealth.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +100,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoEventBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEventBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Vector3Data.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RespawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WinGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AddPoints.cs" />
       </list>
     </option>
   </component>
@@ -197,6 +197,9 @@
       <workItem from="1607662205206" duration="828000" />
       <workItem from="1607718651879" duration="1363000" />
       <workItem from="1607738052864" duration="2179000" />
+      <workItem from="1607800165424" duration="626000" />
+      <workItem from="1607814909417" duration="646000" />
+      <workItem from="1607820195450" duration="655000" />
     </task>
     <servers />
   </component>
