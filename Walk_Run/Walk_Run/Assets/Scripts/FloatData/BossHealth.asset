@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5c6cf54dc88f348ba59c3bf3df40c5, type: 3}
   m_Name: BossHealth
   m_EditorClassIdentifier: 
-  value: 20
+  value: 50
+  setValueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  updateValueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  lessThanZeroEvent:
+    m_PersistentCalls:
+      m_Calls: []

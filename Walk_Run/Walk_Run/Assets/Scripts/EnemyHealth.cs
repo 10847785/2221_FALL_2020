@@ -7,38 +7,52 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     public float currentHealth;
-    public float maxHealth = 3;
+    public FloatData maxHealth;
     public Transform spawnPoint;
     public int points = 10;
-    private UnityEvent EnemyRespawn;
-    public int amount = 10;
+    public UnityEvent EnemyRespawn, lessThanZeroEvent;
+    public float amount = 10;
+
+    private void OnEnable()
+    {
+        currentHealth = maxHealth.value;
+    }
 
     private void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = maxHealth.value;
         spawnPoint = GameObject.Find("SpawnPoint").transform;
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void UpdateHealth()
     {
-        if (other.gameObject.layer == 10) 
-        currentHealth -= amount;
+        currentHealth -= 1;
         if (currentHealth <= 0)
         {
-            currentHealth = 0;
+            lessThanZeroEvent.Invoke();
+        } 
+    }
+
+    /* public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 10) 
+        currentHealth.value -= amount;
+        if (currentHealth.value <= 0)
+        {
+            currentHealth.value = 0;
             transform.position = spawnPoint.position;
             transform.rotation = spawnPoint.rotation;
-            currentHealth = maxHealth;
+            currentHealth.value = maxHealth.value;
             
             
         }
-    }
+    } */
 
-    private void Update()
+   /* private void Update()
     {
         if (currentHealth <= 0f)
         {
             //UnityEvent = EnemyRespawn;
-        }
-    }
+        } 
+    } */
 }

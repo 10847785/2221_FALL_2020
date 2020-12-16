@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Bullet
+  - AI
   layers:
   - Default
   - TransparentFX
@@ -14,20 +16,20 @@ TagManager:
   - UI
   - 
   - 
-  - Enemy
   - Player
+  - Collide With Player
+  - Enemy
+  - Collide With Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - Bullet
   - SpawnPoint
   - Nest
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - AI
   - 
   - 
   - 

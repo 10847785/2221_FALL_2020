@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2916060327825064167}
   - component: {fileID: 2916060327825064185}
-  - component: {fileID: 6957688541021964873}
-  m_Layer: 8
+  - component: {fileID: 1424545905659228213}
+  - component: {fileID: 3887734202154796137}
+  - component: {fileID: 5063058659800719100}
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -43,9 +45,37 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6957688541021964873
+  m_Size: {x: 0.77410144, y: 1, z: 0.83494246}
+  m_Center: {x: 0.018977582, y: 0, z: 0.0257561}
+--- !u!65 &1424545905659228213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916060327825064164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.25198, y: 1.0759023, z: 1.3532982}
+  m_Center: {x: -0.0066418312, y: 0.037951052, z: 0.060637247}
+--- !u!114 &3887734202154796137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916060327825064164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0caa0c9d557d3e64abfade7f7b341566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 20
+  playerHealth: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
+  maximumHealth: {fileID: 11400000, guid: 3f963c9dea392f74ab2d2c4b875b69b1, type: 2}
+--- !u!114 &5063058659800719100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,7 +98,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -0.205
+          m_FloatArgument: -0.15
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -93,9 +123,9 @@ GameObject:
   - component: {fileID: 2916060328529736388}
   - component: {fileID: 839049931429559640}
   - component: {fileID: 9167150258286616929}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

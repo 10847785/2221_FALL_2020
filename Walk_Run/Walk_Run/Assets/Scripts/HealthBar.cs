@@ -1,0 +1,20 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class HealthBar : MonoBehaviour
+{
+    public Slider health;
+
+    public void SetTotal(int healthAmount)
+    {
+        health.maxValue = healthAmount;
+        health.value = healthAmount;
+    }
+
+    public void setting(int healthAmount)
+    {
+        health.value = healthAmount;
+    }
+}

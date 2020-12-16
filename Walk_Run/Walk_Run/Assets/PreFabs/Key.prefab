@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 67171384076019426}
   - component: {fileID: 67171384076019427}
   - component: {fileID: 67171384076019424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Teeth
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 67171384212848115}
   - component: {fileID: 67171384212848112}
   - component: {fileID: 67171384212848113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 67171384993299602}
   - component: {fileID: 67171384993299596}
   - component: {fileID: 67171384993299599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Key
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 67171385315617532}
   - component: {fileID: 67171385315617533}
   - component: {fileID: 67171385315617474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Teeth1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 67171385493692785}
   - component: {fileID: 67171385493692790}
   - component: {fileID: 67171385493692791}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bar
   m_TagString: Player
   m_Icon: {fileID: 0}

@@ -4,9 +4,6 @@ public class PlayerRespawn : MonoBehaviour
 {
     public FloatData value;
     public GameObject spawnPoint;
-    public GameObject spawnPoint1;
-    public GameObject spawnPoint2;
-    public GameObject spawnPoint3;
     [SerializeField] private CharacterController myCharacterControllerScript;
     private ClampFloatData healthClamp;
 

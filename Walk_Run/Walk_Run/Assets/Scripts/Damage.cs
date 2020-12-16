@@ -17,4 +17,9 @@ public class Damage : MonoBehaviour
             playerHealth.value = Mathf.Clamp(playerHealth.value, 0f, maximumHealth.value);
         }
     }
+
+    private void Update()
+    {
+        
+    }
 }

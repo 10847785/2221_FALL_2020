@@ -7,7 +7,7 @@ public class FloatData : ScriptableObject
 {
     public float value;
     public UnityEvent setValueEvent, updateValueEvent, lessThanZeroEvent;
-    
+
     public void SetValue(float number)
     {
         value = number;
@@ -18,6 +18,11 @@ public class FloatData : ScriptableObject
     {
         value += number;
         updateValueEvent.Invoke();
+        
+        if (value <= 0)
+        {
+            lessThanZeroEvent.Invoke();
+        }
     }
 
     public void SetImageFillAmount(Image img)
