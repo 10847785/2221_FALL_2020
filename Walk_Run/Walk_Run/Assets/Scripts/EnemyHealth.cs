@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
     public UnityEvent EnemyRespawn, lessThanZeroEvent;
     public float amount = 10;
 
-    private void OnEnable()
+ /*   private void OnEnable()
     {
         currentHealth = maxHealth.value;
     }
@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = maxHealth.value;
         spawnPoint = GameObject.Find("SpawnPoint").transform;
-    }
+    } */
 
     public void UpdateHealth()
     {

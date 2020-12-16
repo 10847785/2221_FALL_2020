@@ -20,27 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="759663bb-f141-47ab-a42e-679f0727f45c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Walk_Run/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Bullet 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Bullet 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Drone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Health.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Health.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PreFabs/Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabs/Key.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Murder_Hornets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Murder_Hornets.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Walk_Run.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Damage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Murder_Hornets/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Murder_Hornets/NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyRespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyRespawn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/BossHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/BossHealth.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/BossMax.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/BossMax.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/EnemyHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/EnemyHealth.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatData/MaxHealth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatData/MaxHealth.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRespawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Merge.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickUpAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
@@ -94,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Wander.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavMeshAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NestSpawn.cs" />
@@ -122,8 +113,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InstancerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyRespawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
       </list>
     </option>
   </component>
@@ -224,6 +217,9 @@
       <workItem from="1608074175138" duration="664000" />
       <workItem from="1608078174633" duration="1491000" />
       <workItem from="1608097752482" duration="6950000" />
+      <workItem from="1608133503727" duration="601000" />
+      <workItem from="1608137500430" duration="652000" />
+      <workItem from="1608141259792" duration="288000" />
     </task>
     <servers />
   </component>

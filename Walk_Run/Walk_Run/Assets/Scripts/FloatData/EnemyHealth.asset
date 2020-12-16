@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5c6cf54dc88f348ba59c3bf3df40c5, type: 3}
   m_Name: EnemyHealth
   m_EditorClassIdentifier: 
-  value: 88
+  value: 1
   setValueEvent:
     m_PersistentCalls:
       m_Calls: []

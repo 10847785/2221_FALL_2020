@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 movement;
     public Vector3 lookDirection, finalDirection;
     private float yVar;
-    private bool canMove = true, canJump = true, canSprint = true;
+    //private bool canMove = true; //canJump = true, canSprint = true;
     public float gravity = -9.81f;
     public FloatData normalSpeed, fastSpeed, jumpForce;
     private FloatData currentSpeed;
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        canMove = true;
+        //canMove = true;
         
             yVar += gravity * Time.deltaTime;
             var vInput = Input.GetAxis("Vertical") * currentSpeed.value * Time.deltaTime;
@@ -155,7 +155,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator KnockBack(ControllerColliderHit hit, Rigidbody rBody)
     {
-        canMove = false;
+        //canMove = false;
         var pushDistance = 2f;
         movement = -hit.moveDirection;
         movement.y = -1;

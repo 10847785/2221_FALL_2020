@@ -100,8 +100,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6124382441311501725}
   - component: {fileID: 6124382441311501727}
-  - component: {fileID: 8286663519106518640}
-  m_Layer: 12
+  - component: {fileID: 3053247964300160379}
+  m_Layer: 11
   m_Name: Player Damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5783525, y: 1.5437543, z: 2.5465918}
   m_Center: {x: 0.00875405, y: 0.27187714, z: 0.028749986}
---- !u!114 &8286663519106518640
+--- !u!114 &3053247964300160379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,12 +144,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 6124382441311501724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1ae83ddbf133a644a33ac9a5174934f, type: 3}
+  m_Script: {fileID: 11500000, guid: 91f031dc9e9cb664b860d47acdd70852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: -10
-  nestHealth: {fileID: 11400000, guid: 0f74a465e4cb39e449083396ef45c9ce, type: 2}
-  nestMax: {fileID: 11400000, guid: 67f0f4042af1fe44bbeec66d5c225c41, type: 2}
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3abea46a97eef884eba026b952160a1a, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -0.1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
 --- !u!1 &6124382441317923110
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +180,7 @@ GameObject:
   - component: {fileID: 6124382441317923089}
   - component: {fileID: 6124382441317923119}
   - component: {fileID: 7147902553254869179}
-  m_Layer: 20
+  m_Layer: 10
   m_Name: Nest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,9 +300,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 30
-  maxHealth: 30
+  maxHealth: {fileID: 11400000, guid: 343e2e8e6f7bba44aafb4b55a81510d6, type: 2}
   spawnPoint: {fileID: 0}
   points: 10
+  EnemyRespawn:
+    m_PersistentCalls:
+      m_Calls: []
+  lessThanZeroEvent:
+    m_PersistentCalls:
+      m_Calls: []
   amount: 10
 --- !u!1 &6124382441618738404
 GameObject:
